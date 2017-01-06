@@ -9,6 +9,6 @@ docker rm $2 -f
 docker rmi $2 
 docker build -t $1 .
 echo "Container " $2 " is running at IP :172.17.0.2"
-docker run --name $2 -v /usr/src/app/source:/usr/src/app/source $1 
+docker run --name $2 -v /usr/src/application:/usr/src/app/source $1 
 
 
