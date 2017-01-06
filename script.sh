@@ -1,14 +1,15 @@
 #!/bin/bash
 #$1 is image name
 #$2 is container name
-$1 $2
+$1 $2 $3
 echo "======================" 
 echo
 docker stop $2
 docker rm $2 -f
 docker rmi $2 
 docker build -t $1 .
+
 echo "Container " $2 " is running at IP :172.17.0.2"
-docker run --name $2 -v /usr/src/application:/usr/src/app/source $1 
+docker run --name $2 -v $3:/usr/src/app/source $1 
 
 

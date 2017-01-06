@@ -1,10 +1,10 @@
 FROM node:7.3.0
 MAINTAINER "Saurabh"
-ENV workpath /source
-RUN apt-get update
-RUN ["npm","install","-g","nodemon"] 
+RUN apt-get update 
 VOLUME /usr/src/app/source
 COPY . /usr/src/app/source
 WORKDIR /usr/src/app/source
+RUN ["npm","install","-g","nodemon"]
+RUN ["npm","install"]
 EXPOSE 3000
-CMD ["nodemon","index.js"]
+CMD ["npm","start"]
