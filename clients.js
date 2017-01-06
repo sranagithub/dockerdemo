@@ -3,7 +3,7 @@ var client=require('./model/client_schema.js');
 module.exports = function (app) {
     client = [{
             id: "1",
-            Name: "Linux",
+            Name: "Linux-FROM CONTAINER",
             PhoneNo: "953518xxxx",
             role: "development"
         }, {
