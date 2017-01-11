@@ -15,7 +15,7 @@ module.exports = function (app) {
             id: "3",
             Name: "Windows",
             PhoneNo: "953518xxxx",
-            role: "development"
+            role: "develop"
         }
 
     ];
