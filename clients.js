@@ -36,7 +36,7 @@ module.exports = function (app) {
 *definitions: {}
 */
     app.get('/client', function (req, res) {
-        res.send(client);
+        res.send("coming from container...");
     });
 
     app.get('/clientById/:id', function (req, res) {

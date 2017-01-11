@@ -1,0 +1,14 @@
+mongocontainer:
+ image: mongodb
+ ports:
+  - "27017:27017"
+ volumes:
+  - mongodatabase:/data/db
+
+nodeservice:
+ image: node-compose
+ ports: 
+  - "3000:3000"
+ volumes:
+  - /usr/src/application:/usr/src/app/source
+
