@@ -1,12 +1,12 @@
-mongo-service:
+mongocontainer:
  image: mongodb
  ports:
   - "27017:27017"
  volumes:
   - mongodatabase:/data/db
 
-node-service:
- image: node-compose
+nodeservice:
+ build: .
  ports: 
   - "3000:3000"
  volumes:

@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
 var clientSchema = new mongoose.Schema({
-	name: String,
-    phoneno: String,
-    role: String		
+	name: {type: String},
+    phoneno: {type: String},
+    role: {type: String}		
 });
 
-module.exports = mongoose.model('client', clientSchema);;
+module.exports = mongoose.model('cSchema', clientSchema);;
