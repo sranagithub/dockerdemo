@@ -1,5 +1,6 @@
 mongocontainer:
  image: mongodb
+ container_name: mongocontainer
  ports:
   - "27017:27017"
  volumes:
@@ -7,6 +8,9 @@ mongocontainer:
 
 nodeservice:
  build: .
+ container_name: nodeservice
+ links:
+  - mongocontainer
  ports: 
   - "3000:3000"
  volumes:

@@ -5,8 +5,8 @@ var swaggerJSDoc = require('swagger-jsdoc');
 var middleware = require('swagger-express-middleware');
 var app = express();
 
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/clientDatabase', function (error) {
+//mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://mongocontainer:27017/clientDatabase', function (error) {
     if (error) {
         console.log(error);
     }
