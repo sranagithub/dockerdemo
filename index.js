@@ -1,8 +1,8 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var swaggerJSDoc = require('swagger-jsdoc');
-var middleware = require('swagger-express-middleware');
+//var swaggerJSDoc = require('swagger-jsdoc');
+//var middleware = require('swagger-express-middleware');
 var app = express();
 
 //mongoose.Promise = global.Promise;
